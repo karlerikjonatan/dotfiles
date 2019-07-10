@@ -1,0 +1,22 @@
+[alias]
+	a = add --all
+	aliases = !git config -l | grep alias | cut -c 7-
+	b = branch
+	bd = branch -D
+	c = commit
+	cl = clone
+	cm = commit -m
+	co = checkout
+	d = diff
+	f = fetch
+	last = log -1 HEAD
+	p = push
+	pl = pull
+	rb = rebase
+	rh = reset --hard
+	s = status
+
+[user]
+	email = pettersson.jonatan@gmail.com
+	name = Jonatan Pettersson
+  username = karlerikjonatan
