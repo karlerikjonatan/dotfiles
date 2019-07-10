@@ -2,4 +2,5 @@
 alias g="git"
 
 # Prompt
-export PS1="\[\e[1m\]\W\[$(tput sgr0)\[\e[0m\] "
+LUNAR_PHASE=`curl wttr.in/Stockholm?format="%m"`
+export PS1="$LUNAR_PHASE \[\e[1m\]\W\[$(tput sgr0)\[\e[0m\] "
