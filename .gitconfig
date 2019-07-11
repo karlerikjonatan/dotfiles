@@ -1,3 +1,8 @@
+[user]
+	email = pettersson.jonatan@gmail.com
+	name = Jonatan Pettersson
+	username = karlerikjonatan
+
 [alias]
 	a = add --all
 	aliases = !git config -l | grep alias | cut -c 7-
@@ -15,8 +20,3 @@
 	rb = rebase
 	rh = reset --hard
 	s = status
-
-[user]
-	email = pettersson.jonatan@gmail.com
-	name = Jonatan Pettersson
-	username = karlerikjonatan
