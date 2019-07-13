@@ -4,7 +4,8 @@
 	username = karlerikjonatan
 
 [alias]
-	a = add --all
+	a = add
+	aa = add --all
 	b = branch
 	bd = branch -D
 	c = commit
