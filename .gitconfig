@@ -14,6 +14,7 @@
 	co = checkout
 	d = diff
 	f = fetch
+	m = merge
 	p = push
 	pl = pull
 	rb = rebase
