@@ -1,7 +1,7 @@
-[user]
-	email = pettersson.jonatan@gmail.com
-	name = Jonatan Pettersson
-	username = karlerikjonatan
+[includeIf "gitdir:~/Documents/GitHub/"]
+  path = .gitconfig_private
+[includeIf "gitdir:~/Documents/Bitbucket/"]
+  path = .gitconfig_work
 
 [alias]
 	a = add
