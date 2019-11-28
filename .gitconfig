@@ -5,19 +5,15 @@
 
 [alias]
 	a = add
-	aa = add --all
 	b = branch
 	bd = branch -D
 	c = commit
 	cl = clone
 	cm = commit -m
 	co = checkout
-	d = diff
-	f = fetch
 	l = log
-	m = merge
 	p = push
 	pl = pull
-	rb = rebase
 	rh = reset --hard
 	s = status
+	sh = stash
