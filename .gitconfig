@@ -8,6 +8,7 @@
 	b = branch
 	bd = branch -D
 	c = commit
+	ca = commit --amend
 	cl = clone
 	cm = commit -m
 	co = checkout
