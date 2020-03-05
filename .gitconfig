@@ -12,7 +12,7 @@
 	cl = clone
 	cm = commit -m
 	co = checkout
-	d = diff
+	df = diff
 	l = log
 	p = push
 	pl = pull
