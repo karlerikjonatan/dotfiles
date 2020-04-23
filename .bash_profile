@@ -7,5 +7,6 @@ export CLICOLOR=1
 export PS1="\[$(tput bold)\]\W\[$(tput sgr0)\]\e[2m\$(parse_git_branch)\e[m "
 
 alias ..="cd .."
+alias ls="ls -la"
 alias g="git"
 alias v="vim"
