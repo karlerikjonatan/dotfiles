@@ -4,7 +4,7 @@ parse_git_branch() {
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export CLICOLOR=1
-export PS1="\[$(tput bold)\]\W\[$(tput sgr0)\]\e[2m\$(parse_git_branch)\e[m "
+export PS1="\[\033[G\]\[$(tput bold)\]\W\[$(tput sgr0)\]\[\e[2m\$(parse_git_branch)\e[m\] "
 
 alias ..="cd .."
 alias ls="ls -la"
