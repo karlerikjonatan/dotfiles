@@ -1,13 +1,14 @@
-GIT_BRANCH() {
-  a=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
-  if [ -n "$a" ]; then
-    echo " $a"
-  else
-    echo ""
-  fi
+function GIT_BRANCH() {
+	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+	if [ ! "${BRANCH}" == "" ]
+	then
+		echo " ${BRANCH}"
+	else
+		echo ""
+	fi
 }
 
-PS1="\[\e[1m\]\W\[\e[0m\]$(GIT_BRANCH) "
+PS1="\[\e[1m\]\W\[\e[0m\]\`GIT_BRANCH\` "
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export CLICOLOR=1
