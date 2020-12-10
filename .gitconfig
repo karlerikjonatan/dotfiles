@@ -7,6 +7,7 @@
 	a = add
 	b = branch
 	bd = branch -D
+	bda = branch | grep -v "master" | xargs git branch -D 
 	c = commit
 	ca = commit --amend
 	cl = clone
