@@ -16,7 +16,10 @@
 	df = diff
 	l = log
 	p = push
+	pf = push --force
 	pl = pull
+	rb = rebase
+	rbm = rebase master
 	rh = reset --hard
 	s = status
 	sh = stash
