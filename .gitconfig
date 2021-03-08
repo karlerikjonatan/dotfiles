@@ -2,24 +2,3 @@
 	path = .gitconfig_private
 [includeIf "gitdir:~/Documents/Bitbucket/"]
 	path = .gitconfig_work
-
-[alias]
-	a = add
-	b = branch
-	bd = branch -D
-	bda = branch | grep -v "master" | xargs git branch -D 
-	c = commit
-	ca = commit --amend
-	cl = clone
-	cm = commit -m
-	co = checkout
-	df = diff
-	l = log
-	p = push
-	pf = push --force
-	pl = pull
-	rb = rebase
-	rbm = rebase master
-	rh = reset --hard
-	s = status
-	sh = stash
