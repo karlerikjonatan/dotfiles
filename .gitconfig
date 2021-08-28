@@ -1,4 +1,0 @@
-[includeIf "gitdir:~/Documents/GitHub/"]
-	path = .gitconfig_private
-[includeIf "gitdir:~/Documents/Bitbucket/"]
-	path = .gitconfig_work
