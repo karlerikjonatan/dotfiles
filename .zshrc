@@ -6,3 +6,5 @@ RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%b'
 
 PROMPT='%. '
+
+export CLICOLOR=1
