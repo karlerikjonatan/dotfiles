@@ -60,6 +60,3 @@
 
 [tag]
     sort = version:refname
-```
-
-If you want, I can also sort the **sections** alphabetically too.
