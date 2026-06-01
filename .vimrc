@@ -14,7 +14,6 @@ set smarttab
 set softtabstop=2
 set tabstop=2
 
-set linebreak
 set nowrap
 
 set hlsearch
@@ -33,6 +32,5 @@ set list
 set listchars=tab:»·,trail:·,extends:>,precedes:<
 
 set noswapfile
-set undofile
 
 highlight LineNr ctermfg=8
