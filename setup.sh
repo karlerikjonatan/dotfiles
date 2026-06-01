@@ -23,7 +23,10 @@ backup_if_needed() {
       echo "Created backup directory: $BACKUP_DIR"
     fi
 
-    mv "$target" "$BACKUP_DIR/$file_name"
+    if ! mv "$target" "$BACKUP_DIR/$file_name"; then
+      echo "Failed to back up $target. Check file permissions and try again." >&2
+      exit 1
+    fi
     echo "Backed up: $target -> $BACKUP_DIR/$file_name"
   fi
 }
