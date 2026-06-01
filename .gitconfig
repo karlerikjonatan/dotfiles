@@ -1,38 +1,58 @@
 [branch]
         sort = -committerdate
+        autoSetupRebase = always
+
 [column]
         ui = auto
+
 [commit]
         verbose = true
+
 [core]
+        editor = vim
         excludesfile = ~/.gitignore
         fsmonitor = true
         untrackedCache = true
+
 [diff]
         algorithm = histogram
         colorMoved = plain
-        mnemonicPrefix = true 
+        mnemonicPrefix = true
         renames = true
+
 [fetch]
-        all = true
         prune = true
-        pruneTags = true 
-[help] 
+        pruneTags = true
+
+[help]
         autocorrect = prompt
+
 [init]
-        defaultBranch = main 
+        defaultBranch = main
+
+[merge]
+        conflictStyle = zdiff3
+
 [pull]
         rebase = true
+
 [push]
         autoSetupRemote = true
         default = simple
         followTags = true
+
 [rebase]
         autoSquash = true
         autoStash = true
         updateRefs = true
+
 [rerere]
         autoupdate = true
         enabled = true
+
+[status]
+        branch = true
+        short = true
+
 [tag]
         sort = version:refname
