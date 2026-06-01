@@ -19,12 +19,15 @@ backup_if_needed() {
   if [[ -e "$target" || -L "$target" ]]; then
     if [[ -z "$BACKUP_DIR" ]]; then
       BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d%H%M%S)"
-      mkdir -p "$BACKUP_DIR"
+      if ! mkdir -p "$BACKUP_DIR"; then
+        echo "Failed to create backup directory: $BACKUP_DIR" >&2
+        exit 1
+      fi
       echo "Created backup directory: $BACKUP_DIR"
     fi
 
     if ! mv "$target" "$BACKUP_DIR/$file_name"; then
-      echo "Failed to back up $target. Check file permissions and try again." >&2
+      echo "Failed to back up $target to $BACKUP_DIR/$file_name. Check file permissions and try again." >&2
       exit 1
     fi
     echo "Backed up: $target -> $BACKUP_DIR/$file_name"
