@@ -1,47 +1,36 @@
 syntax on
 
-" UI
+set cursorline
 set number
+set relativenumber
 set ruler
 set showcmd
-set cursorline
-set relativenumber
 
-" Indentation
 set autoindent
-set smartindent
 set expandtab
-set tabstop=2
 set shiftwidth=2
-set softtabstop=2
+set smartindent
 set smarttab
+set softtabstop=2
+set tabstop=2
 
-" Wrapping
-set wrap
-set linebreak
+set nowrap
 
-" Search
-set ignorecase
-set smartcase
-set incsearch
 set hlsearch
+set ignorecase
+set incsearch
+set smartcase
 
-" Usability
+set backspace=indent,eol,start
 set hidden
 set wildmenu
 set wildmode=longest:full,full
-set backspace=indent,eol,start
 
-" Encoding
 set encoding=utf-8
 
-" Whitespace
 set list
 set listchars=tab:»·,trail:·,extends:>,precedes:<
 
-" File behavior
-set undofile
 set noswapfile
 
-" Line numbers
 highlight LineNr ctermfg=8
