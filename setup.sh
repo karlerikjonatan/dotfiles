@@ -40,13 +40,17 @@ for file in "${FILES[@]}"; do
     continue
   fi
 
-  if [[ -L "$target_file" ]] && [[ "$(readlink "$target_file")" == "$source_file" ]]; then
+  link_target="$(readlink "$target_file" 2>/dev/null || true)"
+  if [[ -L "$target_file" ]] && [[ "$link_target" == "$source_file" ]]; then
     echo "Already linked: $target_file"
     continue
   fi
 
   backup_if_needed "$target_file"
-  ln -s "$source_file" "$target_file"
+  if ! ln -s "$source_file" "$target_file"; then
+    echo "Failed to create symlink: $target_file -> $source_file" >&2
+    exit 1
+  fi
   echo "Linked: $target_file -> $source_file"
 done
 
