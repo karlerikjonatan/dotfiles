@@ -1,7 +1,7 @@
 autoload -Uz vcs_info add-zsh-hook
 autoload -Uz compinit
 
-compinit -C
+compinit
 
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=50000
