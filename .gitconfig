@@ -75,4 +75,4 @@
 	fsckObjects = true
 
 [include]
-    path = ~/.gitconfig_local
+	path = ~/.gitconfig_local
