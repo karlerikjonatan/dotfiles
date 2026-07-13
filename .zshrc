@@ -1,6 +1,3 @@
-# ~/.zshrc — sourced for INTERACTIVE shells only.
-# Env & PATH live in ~/.zshenv and ~/.zprofile.
-
 # ─── Completion (full security check at most once/24h, else fast) ───
 autoload -Uz compinit
 if [[ -n $HOME/.zcompdump(#qN.mh+24) ]]; then
@@ -12,8 +9,7 @@ fi
 # ─── Prompt plumbing ───
 autoload -Uz vcs_info add-zsh-hook
 
-# ─── Local, untracked secrets (e.g. NPM_TOKEN). Not committed. ───
-# Sourced here (interactive). Move to ~/.zshenv if non-interactive shells need it.
+# ─── Local, untracked overrides & secrets (e.g. NPM_TOKEN, work env). ───
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
 
 # ─── History ───

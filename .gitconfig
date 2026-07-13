@@ -1,17 +1,3 @@
-[alias]
-	forbinda = commit
-	forgrena = branch
-	gom = stash
-	gren = branch
-	klandra = blame
-	knuffa = push
-	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
-	marke = tag
-	ryck = pull
-	sammanfoga = merge
-	vaxla = checkout
-	ympa = rebase
-
 [branch]
 	autoSetupRebase = always
 	sort = -committerdate
@@ -75,4 +61,4 @@
 	fsckObjects = true
 
 [include]
-	path = ~/.gitconfig_local
+	path = ~/.gitconfig.local
