@@ -1,62 +1,78 @@
-[user]
-    email =
-    name = Jonatan Pettersson
+[alias]
+	forbinda = commit
+	forgrena = branch
+	gom = stash
+	gren = branch
+	klandra = blame
+	knuffa = push
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	marke = tag
+	ryck = pull
+	sammanfoga = merge
+	vaxla = checkout
+	ympa = rebase
 
 [branch]
-    autoSetupRebase = always
-    sort = -committerdate
+	autoSetupRebase = always
+	sort = -committerdate
 
 [column]
-    ui = auto
+	ui = auto
 
 [commit]
-    verbose = true
+	verbose = true
 
 [core]
-    editor = vim
-    excludesfile = ~/.gitignore
-    fsmonitor = true
-    untrackedCache = true
+	editor = vim
+	excludesfile = ~/.gitignore
+	fsmonitor = true
+	untrackedCache = true
 
 [diff]
-    algorithm = histogram
-    colorMoved = plain
-    mnemonicPrefix = true
-    renames = true
+	algorithm = histogram
+	colorMoved = zebra
+	mnemonicPrefix = true
+	renames = true
 
 [fetch]
-    prune = true
-    pruneTags = true
+	prune = true
+	pruneTags = true
 
 [help]
-    autocorrect = prompt
+	autocorrect = prompt
 
 [init]
-    defaultBranch = main
+	defaultBranch = main
 
 [merge]
-    conflictStyle = zdiff3
+	conflictStyle = zdiff3
 
 [pull]
-    rebase = true
+	rebase = true
 
 [push]
-    autoSetupRemote = true
-    default = simple
-    followTags = true
+	autoSetupRemote = true
+	followTags = true
 
 [rebase]
-    autoSquash = true
-    autoStash = true
-    updateRefs = true
+	autoSquash = true
+	autoStash = true
+	missingCommitsCheck = warn
+	updateRefs = true
 
 [rerere]
-    autoupdate = true
-    enabled = true
+	autoupdate = true
+	enabled = true
 
 [status]
-    branch = true
-    short = true
+	branch = true
+	short = true
 
 [tag]
-    sort = version:refname
+	sort = version:refname
+
+[transfer]
+	fsckObjects = true
+
+[include]
+    path = ~/.gitconfig_local
